@@ -1,0 +1,25 @@
+# Aplicação Streamlit — Previsão do PIB per capita
+
+## 1. Instalar os requisitos
+
+Abra o terminal na pasta do projeto e execute:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 2. Executar a aplicação
+
+```bash
+streamlit run app.py
+```
+
+O Streamlit abrirá a aplicação no navegador. Se não abrir automaticamente, acesse:
+http://localhost:8501
+
+## Observações
+
+- A aplicação consulta a API pública do Banco Mundial; é necessário ter conexão com a internet.
+- O treinamento dos três métodos pode levar alguns minutos.
+- A divisão temporal preserva a lógica do código original: treino até 2020 e teste após 2020.
+- A previsão do Brasil usa o modelo Random Forest base, como referência no código original.
